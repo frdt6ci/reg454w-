@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СмартСофт ТЕСТ</title>
+    
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="qwer">Тестовое задание СмартСофт</h1>
+        
+        
+        <div class="forma1">
+            <form id="feedbackForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="name" name="name" required minlength="3">
+                    
+                </div>
+                <div class="mb-3">
+                    <label for="Surname" class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" id="Surname" Surname="Surname" required minlength="3">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Почта</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Сообщение</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn" >Отправить</button>
+            </form>
+        </div>
+       
+        <div class="forma2">
+            <h2>Информация о заказе</h2>
+            <div class="mb-4">Мы доставим за 2 дня</div>
+            <form id="orderForm">
+                <div class="mb-3">
+                    <label for="orderName" class="form-label">Полное имя</label>
+                    <input type="text" class="form-control" id="orderName" name="orderName" required>
+                    
+                </div>
+                <div class="mb-3">
+                    <label for="deliveryAddress" class="form-label">Адрес доставки</label>
+                    <input type="text" class="form-control" id="deliveryAddress" name="deliveryAddress" required>
+                    
+                </div>
+                    <div class="mb-3">
+                        <label for="Coment" class="form-label">Коменнтарий к доставки</label>
+                        <textarea class="form-control" id="Coment" name="Coment"  required></textarea>
+                        
+                    </div>
+                
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="agreement" name="agreement" required>
+                    <label class="form-check-label" for="agreement">Я принимаю условия договора-оферты</label>
+                    
+                </div>
+                <button type="submit" class="btn"  ">Создать заказ</button>
+            </div>
+                <div class="review-text">
+                    <h3>Отзывы</h3>
+                    
+                </div>
+
+                <div class="review-card">
+                <div class="review-author">Иван Иванов</div>
+                <div class="review-text">Отличный сервис! Быстро и качественно выполнили заказ. Рекомендую всем.</div>
+            </div>
+            
+            <!-- Отзыв 2 -->
+            <div class="review-card">
+                <div class="review-author">Мария Петрова</div>
+                <div class="review-text">Очень довольна результатом. Сотрудники вежливые и профессиональные.</div>
+            </div>
+            
+            <!-- Отзыв 3 -->
+            <div class="review-card">
+                <div class="review-author">Алексей Смирнов</div>
+                <div class="review-text">Цены соответствуют качеству. Буду обращаться еще не раз.</div>
+            </div>
+            
+            <!-- Отзыв 4 -->
+            <div class="review-card">
+                <div class="review-author">Елена Кузнецова</div>
+                <div class="review-text">Приятно удивлена уровнем сервиса. Все сделали в срок и даже раньше.</div>
+
+
+                
+            </form>
+        </div>
+        
+       
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script src="reviews.json"> </script>
+    
+    
+</body>
+</html>
